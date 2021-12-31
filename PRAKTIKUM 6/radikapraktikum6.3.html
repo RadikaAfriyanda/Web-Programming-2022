@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 6.3</title>
+    <style>
+    *{
+    margin: 10px;
+    }
+    body{
+    background-color: pink;
+    }
+    .container{
+    background: pink;
+    display: flex;
+    }
+    .box{
+    padding: 20px;
+    color: black;
+    font-family: Poppins, "Helvetica Neue", arial, sans-serif;
+    font-size: 1em;
+    text-shadow: 0 1px 1px rgba(0,0,0,.2);
+    text-align: center;
+    width: 300px;
+    }
+    .header {
+    background-color:aquamarine;
+    width: 1500px;
+    height: 70px;
+    }
+    .aside{
+    background-color:aqua;
+    width: 300px;
+    height: 380px;
+    }
+    .article {
+    min-height: 30vh;
+    width: 75%;
+    background-color: salmon;
+    padding-top: 7em;
+    padding-left: 1em;
+    text-align: center;
+    }
+    .footer{
+    background-color:aquamarine;
+    width: 1500px;
+    height: 70px;
+    }
+    img {
+    justify-content: space-around;
+    width: 20%;
+    padding: 1em;
+    }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <box class="box header">
+                <header><h1>Header</h1></header></box>
+        </div>
+        <div class="container">
+            <box class="box aside">
+                <aside><h1>Aside</h1></aside></box>
+                <article class="article"><h1>Article</h1>
+                    <img src="gambar/kucing.jpg" alt="">
+                    <img src="gambar/kucing.jpg" alt="">
+                    <img src="gambar/kucing.jpg" alt="">
+                </article>
+        </div>
+        <div class="container">
+            <box class="box footer">
+                <footer><h1>Footer</h1></footer></box>
+        </div>
+</body>
+</html>

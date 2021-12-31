@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            border: solid 2px rgb(12, 11, 11);
+            padding: 2em;
+            width: 20%;
+            border-radius: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: auto;
+            margin-top: 2em;
+        }
+
+        .container{
+            display: block;
+            align-items: center;
+            height: 20vh;
+        }
+
+        input{
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+        button{
+            width: 100%;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username">
+        </div>
+        <br>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="Password" id="password">
+        </div>
+        <br>
+        <div>
+            <button type="submit" onclick="Login()">login</button>
+        </div>
+    </div>
+
+    <script>
+        const failLogin = () => alert("username atau password salah")
+
+const successLogin = () => {
+    console.log("username benar");
+    location.href = "LoginSukses.html";
+};
+
+const Login = () => {
+    const username = document.getElementById("username").value;
+    const pass = document.getElementById("password").value;
+    console.log(username);
+    console.log(pass);
+    if(username === 'radika2003' && pass === '12345'){
+        successLogin();
+    } else {
+        failLogin()
+    }
+}
+    </script>
+</body>
+</html>

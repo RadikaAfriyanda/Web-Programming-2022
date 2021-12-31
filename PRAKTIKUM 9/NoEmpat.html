@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <select id="dropdown" onchange="Gambar()">
+        <option value="Hamster">Hamster</option>
+        <option value="Gajah">Gajah</option>
+        <option value="Gorila">Gorila</option>
+        <option value="Jerapah">Jerapah</option>
+        <option value="Zebra">Zebra</option>
+        <option value="Kucing">Kucing</option>
+        <option value="Kelinci">Kelinci</option>
+    </select>
+    <br>
+    <br>
+    <img id="images" style="width: 50%;">
+
+
+    <script>
+        const Gambar = () => {
+        const dropdown = document.getElementById('dropdown');
+        const images = document.getElementById('images');
+
+        if(dropdown.value === 'Hamster') {
+            images.setAttribute('src', './gambar/Hamster.jpg');
+            alert('Ini Foto Hamster');
+        } else if (dropdown.value === 'Gajah') {
+            images.setAttribute('src', './gambar/Gajah.jpg');
+            alert('Ini Foto Gajah');
+        } else if (dropdown.value === 'Gorila') {
+            images.setAttribute('src', './gambar/Gorila.jpg');
+            alert('Ini Foto Gorila');
+        } else if (dropdown.value === 'Jerapah') {
+            images.setAttribute('src', './gambar/Jerapah.jpg');
+            alert('Ini Foto Jerapah');
+        } else if (dropdown.value === 'Zebra') {
+            images.setAttribute('src', './gambar/Zebra.jpg');
+            alert('Ini Foto Zebra');
+        } else if (dropdown.value === 'Kucing') {
+            images.setAttribute('src', './gambar/Kucing.jpg');
+            alert('Ini Foto Zebra');
+        }else if (dropdown.value === 'Kelinci') {
+            images.setAttribute('src', './gambar/Kelinci.jpg');
+            alert('Ini Foto Zebra');
+        }
+    }
+    </script>
+</body>
+</html>
